@@ -23,7 +23,7 @@ Helper methods for testing and whatnot.
     {print, ok, eq, arrayEq} = require 'testy'
 
 
-<div id="misc">Misc.</div>
+## <div id="misc">Misc.</div>
 
 List method names of arrays and strings:
 
@@ -97,7 +97,7 @@ A simple counter:
     eq count.total, 7
 
 
-<div id="string">Strings</div>
+## <div id="string">Strings</div>
 
 Split a string:
 
@@ -115,7 +115,7 @@ Extend prototype w/ pythonic method names
     eq 'foo', 'FOO'.lower()
 
 
-<div id="words">Words</div>
+## <div id="words">Words</div>
 
     wordlist = "foo bar baz biz buz".split(" ")
     ok 'foo' in wordlist
@@ -157,7 +157,7 @@ Filter out non-dict words:
     arrayEq dictwords, ['foo', 'bar', 'biz']
 
 
-<div id="array">Arrays</div>
+## <div id="array">Arrays</div>
 
 We'll use this list of numbers below.
 
@@ -356,7 +356,7 @@ Extend an array (as mutator method):
 
 
 
-## Iteration Methods
+## <div id="iter">Iteration Methods</div>
 
 Collect the doubled value for each number in `nums`:
 
@@ -389,7 +389,7 @@ Reduce elements to a single value:
     eq 10, nums.reduce (x, y) -> x + y
 
 
-<div id="math">Math</div>
+## <div id="math">Math</div>
      
 Find min/max in a list:
 
