@@ -4,7 +4,7 @@ Coffee
 In which we list tips, tricks, and reminders.
 
 * [Misc.](#misc)
-* [Strings](#string)
+* [Strings](#strings)
 * [Words](#words)
 * [Arrays](#array)
 * [Math](#math)
@@ -103,7 +103,7 @@ eq count.total, 7
 ```
 
 
-## <div id="string">Strings</div>
+## <div id="strings">Strings</div>
 
 Split a string:
 ```coffeescript
