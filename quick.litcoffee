@@ -107,12 +107,26 @@ Split a string:
     words = "foo|bar|baz|biz|buz".split("|")
     arrayEq words, ['foo', 'bar', 'baz', 'biz', 'buz']
 
+Trim a string:
+
+    eq 'x', ' x '.trim()
+    eq 'x ', ' x '.trimLeft()
+    eq ' x', ' x '.trimRight()
+
 Extend prototype w/ pythonic method names
 
     String::upper = -> @toUpperCase()
     String::lower = -> @toLowerCase()
     eq 'FOO', 'foo'.upper()
     eq 'foo', 'FOO'.lower()
+
+    String::startsWith = (str) -> @indexOf(str) is 0
+    ok 'foo bar'.startsWith 'foo'
+
+    String::endsWith = (str) ->
+      ///#{str}$///.test @
+
+    ok 'foo bar'.endsWith 'bar'
 
 
 ## <div id="words">Words</div>
