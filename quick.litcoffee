@@ -87,10 +87,6 @@ A simple counter:
       constructor: (@total=0) ->
       inc: (n=1) -> @total += n
 
-
-    counter = (total=0) -> 
-      (inc=1) -> total += inc
-
     count = new Counter(5)
     eq count.inc(), 6
     eq count.inc(), 7

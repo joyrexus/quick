@@ -95,16 +95,13 @@ A simple counter:
 class Counter
   constructor: (@total=0) ->
   inc: (n=1) -> @total += n
-```
 
-    counter = (total=0) -> 
-      (inc=1) -> total += inc
-```coffeescript
 count = new Counter(5)
 eq count.inc(), 6
 eq count.inc(), 7
 eq count.total, 7
 ```
+
 
 ## <div id="string">Strings</div>
 
