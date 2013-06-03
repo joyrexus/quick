@@ -36,11 +36,19 @@ $$('#container li')
 $$("#large:nth-child(even)")
 ```
 
-## Get element attributes
+## Create elements
+
+```coffeescript
+div = document.createElement 'div'
+```
+
+## Get and set element attributes
 
 ```coffeescript
 $("#id").getAttribute 'data-fruit'
 $('input').getAttribute 'name'
+
+$('input').setAttribute 'name', "status"
 ```
 
 ## Modifying elements
@@ -49,6 +57,7 @@ $('input').getAttribute 'name'
 $('#box').classList.add 'wrap'
 $('#box').classList.remove 'wrap'
 $('#box').classList.toggle 'wrap'
+$('#box').style.margin = '25px'
 ```
 
 ## Animate a modal dialog into or out of view
@@ -60,3 +69,8 @@ notice.classList.remove "modal-visible"
 notice.classList.toggle "modal-visible"
 ```
 
+## Register events
+
+```coffeescript
+element.addEventListener 'click', fn
+```
