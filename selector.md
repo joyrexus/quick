@@ -41,14 +41,13 @@ $$("#large:nth-child(even)")
 ```coffeescript
 div = document.createElement 'div'
 div.parentNode.removeChild(div)
-
 ```
 
 ## Append or prepend an element
 
 ```coffeescript
-a.appendChild b
-a.insertBefore b, a.childNodes[0]
+A.appendChild B
+A.insertBefore B, A.childNodes[0]
 ```
 
 ## Get and set element attributes
